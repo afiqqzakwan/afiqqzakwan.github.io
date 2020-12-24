@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+<style>
+body {
+    background-image: url("evil.jpg");
+    width: auto;
+	height: auto;
+    background-repeat: no-repeat;
+</style>
+<head>
+<meta charset="utf-8">
+<title>BMI Check</title>
+</head>
+
+<body>
+	<center>
+		<p> fill in all the information required.</p><br>
+		<h1 style="color: white;">BMI Calculator</h1>
+		<table cellpadding="20px" bgcolor="#7FDAD8" border="5">
+			<tr>
+				<td>Name: </td>
+				<td><input type="text" id="name" placeholder="Enter your name" required></td>
+			</tr>
+			<tr>
+				<td>Gender: </td>
+				<td>
+					<input type="radio" name="gender" required>Male
+					<input type="radio" name="gender" required>Female
+				</td>
+			</tr>
+			<tr>
+				<td>Birthday: </td>
+				<td>
+					<select name="day">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+						<option value="10">10</option>
+						<option value="11">11</option>
+						<option value="12">12</option>
+						<option value="13">13</option>
+						<option value="14">14</option>
+						<option value="15">15</option>
+						<option value="16">16</option>
+						<option value="17">17</option>
+						<option value="18">18</option>
+						<option value="19">19</option>
+						<option value="20">20</option>
+						<option value="21">21</option>
+						<option value="22">22</option>
+						<option value="23">23</option>
+						<option value="24">24</option>
+						<option value="25">25</option>
+						<option value="26">26</option>
+						<option value="27">27</option>
+						<option value="28">28</option>
+						<option value="29">29</option>
+						<option value="30">30</option>
+						<option value="31">31</option>
+					</select>
+					<select>
+						<option value="january">January</option>
+						<option value="february">February</option>
+						<option value="march">March</option>
+						<option value="april">April</option>
+						<option value="may">May</option>
+						<option value="june">June</option>
+						<option value="july">July</option>
+						<option value="august">August</option>
+						<option value="september">September</option>
+						<option value="october">October</option>
+						<option value="november">November</option>
+						<option value="december">December</option>
+					</select>
+					<select name="year">
+						<option value="1997">1997</option>
+						<option value="1998">1998</option>
+						<option value="1999">1999</option>
+						<option value="2000">2000</option>
+						<option value="2001">2001</option>
+						<option value="2002">2002</option>
+						<option value="2003">2003</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Weight(kg): </td>
+				<td><input type="text" id="w" placeholder="Your Weight" required></td>
+			</tr>
+			<tr>
+				<td>Height(m) :</td>
+				<td><input type="text" id="h" placeholder="Your Height" required></td>
+			</tr>
+			<tr>
+				<td>Favourite Activities: </td>
+				<td>
+					<input type="checkbox">Play Football<br>
+					<input type="checkbox">Fishing<br>
+					<input type="checkbox">Play Badminton
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center">
+					<button name="calc" onClick="calc()">Calculate</button>
+				</td>
+			</tr>
+		</table>
+		<br>
+		<button style="color: aliceblue"><a href="about me.html">Go to previous page</a></button>
+	</center>
+	<script>
+		function calc(){
+			var w = parseFloat(document.getElementById("w").value);
+			var h = parseFloat(document.getElementById("h").value);
+			var name = document.getElementById("name").value;
+			var bmi = w / (h * h);
+			alert("Your BMI is " + bmi.toFixed(2));
+			if (bmi >= 35.0){
+				alert("OMG " + name + ". You are extremely obese !!");
+			}
+			else if (bmi >= 30.0){
+				alert("Oh no " + name + ". You are obese !!");
+			}
+			else if (bmi >= 25.0){
+				alert("Oh no " + name + ". You are overweight !!");
+			}
+			else if (bmi >= 18.0){
+				alert("Hello " + name + ". You are normal.");
+			}
+			else if (bmi < 18.0) {
+				alert("Please eat more " + name + ". You are underweight.");
+			}
+			else {
+				alert("Data not fulfill");
+			}
+		}
+	</script>
+</body>
+</html>

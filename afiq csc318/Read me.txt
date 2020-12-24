@@ -1,0 +1,2 @@
+- open with browser other than google chrome. 
+- chrome tak support autoplay audio.

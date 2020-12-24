@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+	<style>
+	div.scrollmenu {
+  background-color: #1000A2;
+  overflow:auto;
+  white-space: nowrap;
+}
+	div.scrollmenu a {
+  display:inline-table;
+  color:antiquewhite;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+	div.scrollmenu a:hover {
+  background-color: #DFAEAF;
+}
+body {
+    background-image: url("cat.jpg");
+    height: 900;
+	width: 4000;
+    background-repeat: no-repeat;
+}
+	table, th, td{
+			border: 1px solid #40EAFF;
+			padding: 2px;
+		}
+		th, td{
+			text-align:left;
+		}
+		.button {
+  border-radius: 4px;
+  background-color: #4E00B7;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 400px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
+<head>
+<meta charset="utf-8">
+<title>About me</title>
+</head>
+
+<body>
+	<center>
+		<div class="scrollmenu">
+			<a href="my home page.html">Home</a>
+			<a href="hobbies.html">Hobbies</a>
+			<a href="about me.html">About me</a>
+		</div>
+	</center>
+	<center>
+	<h1 style="color: #40EAFF">
+		About me
+	</h1>
+	<marquee><p style="color: aliceblue">
+		This page contains information about me.
+	</p></marquee>
+	<table>
+		<tr>
+			<td style="color: aliceblue">Full Name: </td>
+			<td style="color: aliceblue">Afiq Zakwan Bin Hashim</td>
+		</tr>
+		<tr>
+			<td style="color: aliceblue">Matrix Number: </td>
+			<td style="color: aliceblue">2018203634</td>
+		</tr>
+		<tr>
+			<td style="color: aliceblue">Contact: </td>
+			<td style="color: aliceblue">Whatsapp:0182725435
+			<br>
+			Instagram:AFIQQZAKWAN
+			<br>
+			Twitter:AFIQZKWANN
+		</tr>
+		<tr>
+			<td style="color: aliceblue">Email: </td>
+			<td style="color: aliceblue">afiqz1582@gmail.com</td>
+		</tr>
+	</table>
+	</center>
+	<br>
+	<br>
+	<br>
+	<center>
+	<button class="button"><span><a href="bmi.html" style="color: aliceblue">Check BMI Here</a></span></button>
+	</center>
+</body>
+</html>
